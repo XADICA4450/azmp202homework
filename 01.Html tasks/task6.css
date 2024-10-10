@@ -1,0 +1,72 @@
+
+.area{
+    background-color: rgb(163, 158, 158);
+    width: 50vw;
+    
+    
+
+
+
+}
+.card{
+    text-align: center;
+}
+.card img{
+    width: 200px;
+    height: 200px;
+    padding: 4rem;
+    
+}
+
+.card button{
+    width: 200px;
+    height: 33px;
+    background-color: black;
+    
+}
+.card a{
+    color: white;
+    text-decoration: none;
+}
+.icon i{
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+}
+.card p{
+    font-size: 1.5rem;
+     
+    
+}
+.About{
+    
+    width: 50vw;
+    height: 100vh;
+    color: black;
+}
+.text{
+    text-align: center;
+}
+.About button{
+    margin-left: 20px;
+    width: 200px;
+    height: 33px;
+    background-color: black;
+
+}
+.About a{
+    color: white;
+}
+.box{
+    display: flex;
+    
+
+}
+body{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+
+
