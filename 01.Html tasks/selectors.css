@@ -1,0 +1,34 @@
+.Car h1{
+    color: black;
+}
+ .Car p{
+
+    color: rgb(10, 108, 195);
+}
+ul li{
+    color: brown;
+}
+.Program li{
+    color: rgb(199, 19, 118);
+}
+.Telephone,p{
+    color: yellowgreen;
+}
+a {
+    color: pink;
+
+}
+.Color h3{
+    color: red;
+}
+.Color h4{
+    color: yellow;
+}
+.Color h2{
+    color: black;
+
+}
+.Color p{
+    color: purple;
+}
+    

@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+p{
+    font-family: "Afacad Flux", sans-serif;
+}
+
+.common{
+    border: solid;
+    color: black;
+    width: 270px;
+    height: 380px;
+    text-align: center;
+}
+i{
+    font-size: 70px;
+}
+.Twitter button{
+    background-color: black;
+    border-radius: 15px;
+    height: 2rem;
+    width: 10rem;
+}
+.Twitter a{
+    color:white;
+    text-decoration: none;
+}
+.common:hover{
+    background-color: rgb(247, 11, 109);
+    color: white;
+
+}
+button:hover{
+    background-color: white;
+
+}
+button a:hover{
+    color: rgb(247, 11, 109) ;
+}
+.Instagram button{
+    background-color: black;
+    border-radius: 15px;
+    height: 2rem;
+    width: 10rem;
+}
+.Youtube button{
+    background-color: black;
+    border-radius: 15px;
+    height: 2rem;
+    width: 10rem;
+}
+.Instagram a{
+    color:white;
+    text-decoration: none;
+}
+
+.Youtube a{
+    color:white;
+    text-decoration: none;
+}
+.Youtube button:hover{
+    background-color:white ;
+}
+.Instagram button:hover{
+    background-color: white;
+}
+.class{
+    display: flex;
+    padding: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+}

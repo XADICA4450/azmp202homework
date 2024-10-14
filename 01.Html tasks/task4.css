@@ -1,0 +1,27 @@
+h2{
+
+    color: red;
+    background-color: blueviolet;
+}
+li:nth-child(5){
+    background-color: yellow;
+     
+}
+li:nth-child(6){
+    background-color: yellow;
+}
+li:nth-child(7){
+    background-color: yellow;
+}
+
+.blue{
+    background-color: blue;
+
+
+}
+.green{
+    background-color: green;
+}
+.red{
+    color: red;
+}
