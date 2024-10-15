@@ -1,0 +1,33 @@
+.container{
+    width: 1200px;
+  
+}
+.about ul{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+}
+.image img{
+    width: 150px;
+    height: 100px;
+    position: relative;
+    left: 20px;
+    top: 20%;
+}
+.image{
+    border: solid grey;
+    width: 230px;
+    height: 230px;
+}
+.box{
+    border: solid;
+    width: 235px;
+    height: 400px;
+}
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px
+    ;
+}
