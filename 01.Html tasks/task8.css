@@ -1,5 +1,38 @@
-  .list ul li{
-    display: flex;
+*{
+  margin: 0px;
+  top: 0px;
+  background-size: border-box;
+  
+}
 
+
+
+.list ul {
+  display: flex;
+  text-decoration: none;
+  list-style-type: none;
+  gap: 20px;
+  font-size: 24px;
 
 }
+.container{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  background-color:  #212529;
+  position: fixed;
+}
+
+.container{
+  max-width: 1200px;
+}
+img{
+  width: 100%;
+  height: 800px;
+
+}
+ 
+

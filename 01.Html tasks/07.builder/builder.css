@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-size: border-box;
+}
+.container{
+    max-width: 1200px;
+    
+} ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    
+}
+ul li{ 
+    list-style-type: none;
+}
+.head >img{
+    position: relative;
+    top: 35px;
+}
+.list img{
+  
+    width:100%;
+
+}
+.image{
+    background-image: url("https://preview.colorlib.com/theme/builder/img/banner/home-banner.jpg.webp");
+    width: 1200px;
+    height: 800px;
+}
+.about{
+    text-align: center;
+    padding-top: 370px;
+    text-decoration: none;
+}
+h3{
+    font-size: 40px;
+    color: white;
+}
+h3 spam{
+    border: ;
+    background-color: #ffc107;
+    color:black;
+    border-radius: 10%;
+    
+}
+p {
+    color: white;
+
+}
+.btn{
+    text-decoration: none;
+    color: #ffc107;
+  
+}
+button{
+    width: 120px;
+    height: 44px;
+    border-radius: 8%;
+    background-color: black;
+    
+}
+button :hover{
+    background-color: #ffc107;
+    color: black;
+    
+}
+
+    
