@@ -1,0 +1,18 @@
+@mixin flexbox(){
+    display: flex;
+    justify-content:space-between ;
+    align-items:center ;
+}
+
+
+@mixin for-phone-only {
+    @media (max-width: 767px) { @content; }
+  }
+  @mixin for-tablet-only {
+    @media (max-width: 1023px) { @content; }
+  }
+
+  @mixin for-desktop-only {
+    @media (min-width: 1024px) { @content; }
+  }
+  

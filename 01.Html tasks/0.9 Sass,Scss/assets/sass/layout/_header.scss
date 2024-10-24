@@ -1,0 +1,16 @@
+header{
+    background-color: $bg-color-secondary
+    ;
+    .header{
+        @include flexbox();
+        .logo{
+
+        }
+        nav{
+
+        }
+        .contact{
+            @extend %primary-btn;
+        }
+    }
+}

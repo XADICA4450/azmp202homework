@@ -1,0 +1,14 @@
+%primary-btn{
+    color: white;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    border: 1px solid rgb(103, 284, 119);
+    cursor: pointer;
+    transition: all;
+    &:hover{
+        background-color: rgb(103, 104, 119);
+    }
+}
