@@ -226,3 +226,86 @@
 //   console.log("Qiymətlərin cəmi: $" + totalPriceInt);
 //   console.log("Qiymətlərin ortalaması: $" + averagePriceInt);
   
+
+
+// 12) Daxil olunan ədədin array-də olub olmadığını təyin edən proqram tərtib edin.
+
+
+// const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// const number = prompt("Bir ədəd daxil edin:");
+
+// let found = false;
+// for (let i = 0; i < array.length; i++) {
+//     if (array[i] == number) {
+//         found = true;
+//         break;
+//     }
+// }
+
+
+// if (found) {
+//     console.log("Daxil olunan ədəd array-də mövcuddur.");
+// } else {
+//     console.log("Daxil olunan ədəd array-də yoxdur.");
+// }
+
+
+// 13)tələbələr array-ində tələbələrin ortalaması ən yüksək olanı, ortalaması 90-dan yuxarı olanları tapan proqram yazın
+// const students = [
+//     { name: "Ali", scores: [90, 85, 92] },
+//     { name: "Mammal", scores: [75, 80, 85] },
+//     { name: "Camil", scores: [90, 95, 85] },
+//     { name: "Davud", scores: [100, 100, 100] }
+//   ];
+  
+//   let highestAverageStudent = null;
+//   let highestAverage = 0;
+//   let above90Students = [];
+  
+//   for (let i = 0; i < students.length; i++) {
+//     let total = 0;
+//     let scores = students[i].scores;
+  
+//     for (let j = 0; j < scores.length; j++) {
+//       total += scores[j];
+//     }
+  
+//     let average = total / scores.length;
+  
+    
+//     if (average > 90) {
+//       above90Students.push(students[i]);
+//     }
+  
+
+//     if (average > highestAverage) {
+//       highestAverage = average;
+//       highestAverageStudent = students[i];
+//     }
+//   }
+  
+  
+//   console.log("Ortalaması 90-dan yuxarı olan tələbələr:", above90Students);
+//   console.log("Ortalaması ən yüksək olan tələbə:", highestAverageStudent);
+  
+
+// 14)
+
+// let number = +prompt("ededi daxil edin")
+// let strNumber = number.toString(); 
+// let isPalindrome = true; 
+
+// for (let i = 0; i < strNumber.length / 2; i++) {
+//   if (strNumber[i] !== strNumber[strNumber.length - 1 - i]) {
+//     isPalindrome = false; 
+//     break; 
+//   }
+// }
+
+
+// if (isPalindrome) {
+//   console.log(number + " polindromdur.");
+// } else {
+//   console.log(number + " polindrom deyil.");
+// }
