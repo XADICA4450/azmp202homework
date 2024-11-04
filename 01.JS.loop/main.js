@@ -309,3 +309,4 @@
 // } else {
 //   console.log(number + " polindrom deyil.");
 // }
+
