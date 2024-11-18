@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  
+  .container {
+    text-align: center;
+    padding: 20px;
+    width: 80%;
+  }
+  
+
+  h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+
+  .todo-input {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  #todo {
+    width: 70%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  #add-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #add-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  .status-inputs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .status-inputs input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 23%;
+  }
+  
+  .all-todos {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .completed-todos {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .pending-todos {
+    background-color: #ffc107;
+    color: white;
+  }
+  
+  .clear-all {
+    background-color: #dc3545;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .clear-all:hover {
+    background-color: #c82333;
+  }
+  
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  li.completed {
+    text-decoration: line-through;
+    color: #6c757d;
+  }
+  
+  li label {
+    flex-grow: 1;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .edit-icon, .clear-icon {
+    cursor: pointer;
+    margin-left: 10px;
+    color: #007bff;
+  }
+  
+  .edit-icon:hover {
+    color: #0056b3;
+  }
+  
+  .clear-icon:hover {
+    color: #dc3545;
+  }
+  
