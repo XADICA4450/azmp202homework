@@ -1,0 +1,26 @@
+
+
+
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(242, 12, 150);
+    background-color: black;
+    font-size: 20px;
+    height: 50px;
+    padding: 10px;
+  }
+  .list{
+    display: flex;
+    list-style-type: none;
+    gap: 1.2rem;
+ 
+  }
+
+  ul{
+    display: flex;
+    gap: 0.4rem;
+  }
+.menu{
+  font-size: 30px;
+}
