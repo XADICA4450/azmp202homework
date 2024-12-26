@@ -1,6 +1,5 @@
 
 
-import { BrowserRouter as Router, Routes, Route, } from 'react-router-dom';
 import ClientLayout from './layouts/ClientLayout';
 import AdminLayout from './layouts/AdminLayout';
 import Home from './pages/client/Home';
@@ -18,10 +17,10 @@ import EditUser from './pages/admin/EditUser';
 import EditProduct from './pages/admin/EditProduct';
 import AddProduct from './pages/admin/AddProduct';
 import NotFound from './pages/client/NotFound';
+import {  Routes, Route } from 'react-router';
 
 const App = () => {
   return (
-    <Router>
       <Routes>
         <Route path="/" element={<ClientLayout />}>
           <Route index element={<Home />} />
@@ -32,7 +31,7 @@ const App = () => {
           <Route path="login" element={<Login />} />
           <Route path="register" element={<Register />} />
         </Route>
-        
+
         <Route path="/admin" element={<AdminLayout />}>
           <Route index element={<Dashboard />} />
           <Route path="users" element={<Users />} />
@@ -45,7 +44,6 @@ const App = () => {
 
         <Route path="*" element={<NotFound />} />
       </Routes>
-    </Router>
   );
 };
 

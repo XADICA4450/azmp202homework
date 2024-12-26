@@ -1,6 +1,6 @@
 import  { useState } from 'react';
 import { Link } from 'react-router-dom';
-
+import styles from '../../assets/Users.module.scss'
 const Users = () => {
   const [users, setUsers] = useState([
     { id: 1, name: 'John Doe', email: 'john@example.com' },
@@ -13,10 +13,10 @@ const Users = () => {
   };
 
   return (
-    <div>
+    <div className={styles.Users}>
       <h1>Users</h1>
       <Link to="/admin/users/add">Add New User</Link>
-      <table>
+      <table className={styles.list}>
         <thead>
           <tr>
             <th>ID</th>
