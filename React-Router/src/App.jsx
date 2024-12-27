@@ -18,6 +18,7 @@ import EditProduct from './pages/admin/EditProduct';
 import AddProduct from './pages/admin/AddProduct';
 import NotFound from './pages/client/NotFound';
 import {  Routes, Route } from 'react-router';
+import Favorites from './pages/admin/Favorites';
 
 const App = () => {
   return (
@@ -40,6 +41,7 @@ const App = () => {
           <Route path="users/edit/:id" element={<EditUser />} />
           <Route path="products/edit/:id" element={<EditProduct />} />
           <Route path="products/add" element={<AddProduct />} />
+          <Route path="favorites" element={<Favorites />} />
         </Route>
 
         <Route path="*" element={<NotFound />} />

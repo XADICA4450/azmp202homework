@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import { Helmet } from "react-helmet-async";
+import { FaRegHeart } from "react-icons/fa";
 
 import '../../../src/assets/Dasboard.css'
+import { FaHeart } from "react-icons/fa6";
+import { useFavorites } from "../../context/FavoritesContext";
 
 
 const products = [
@@ -250,6 +253,7 @@ const products = [
 const Dashboard = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [categoryFilter, setCategoryFilter] = useState("all");
+  const { favorites, toggleFavorite } = useFavorites();
 
   
   const filteredProducts = products.filter((product) => {
@@ -306,9 +310,22 @@ const Dashboard = () => {
                 <span>({product.rating.count} reviews)</span>
               </div>
             </div>
+
+            <div
+              onClick={() => toggleFavorite(product)}  
+              style={{ cursor: "pointer" }}
+            >
+              {favorites.some((fav) => fav.id === product.id) ? (
+                <FaHeart color="red" />
+              ) : (
+                <FaRegHeart />
+              )}
+            </div>
+      
           </div>
         ))}
       </div>
+      
     </div>
   );
 };
