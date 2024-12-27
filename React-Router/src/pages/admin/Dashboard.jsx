@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Helmet } from "react-helmet-async";
 
 import '../../../src/assets/Dasboard.css'
@@ -248,18 +248,53 @@ const products = [
 ]
 
 const Dashboard = () => {
+  const [searchTerm, setSearchTerm] = useState("");
+  const [categoryFilter, setCategoryFilter] = useState("all");
+
+  
+  const filteredProducts = products.filter((product) => {
+    const matchesSearch = product.title.toLowerCase().includes(searchTerm.toLowerCase()) || 
+                          product.description.toLowerCase().includes(searchTerm.toLowerCase());
+
+    const matchesCategory = categoryFilter === "all" || product.category === categoryFilter;
+
+    return matchesSearch && matchesCategory;
+  });
+
   return (
     <div>
-
       <Helmet>
         <title>Admin Dashboard - Product List</title>
       </Helmet>
 
       <h1>Product Dashboard</h1>
+
       
+      <div className="filters">
+        <input
+          type="text"
+          placeholder="Search Products..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          className="search-input"
+        />
+
+        <select
+          value={categoryFilter}
+          onChange={(e) => setCategoryFilter(e.target.value)}
+          className="category-select"
+        >
+          <option value="all">All Categories</option>
+          <option value="men's clothing">Men's Clothing</option>
+          <option value="jewelery">Jewelery</option>
+          <option value="electronics">Electronics</option>
+          <option value="women's clothing">Women's Clothing</option>
+        </select>
+      </div>
+
   
       <div className="product-grid">
-        {products.map((product) => (
+        {filteredProducts.map((product) => (
           <div className="card" key={product.id}>
             <img src={product.image} alt={product.title} className="product-image" />
             <div className="card-body">
