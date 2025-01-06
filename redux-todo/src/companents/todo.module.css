@@ -1,0 +1,66 @@
+.container{
+    padding:  16% 35%;
+}
+.add{
+    background-color: greenyellow;
+    width: 100px;
+    height: 30px;
+    border: solid 1px black;
+    border-radius: 10px;
+    
+}
+
+.add:hover{
+    background-color: green;
+}
+.input{
+    height: 20px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+.clear{
+    background-color: red;
+    width: 100px;
+    height: 30px;
+    border-radius: 7px;
+    border: solid 1px black;
+    margin-left: 10px;
+}
+.clear:hover{
+    background-color:rgb(87, 20, 20);
+}
+.search{
+    height: 30px;
+    width: 200px;
+    border-radius: 3px;
+    border: solid 0.5px;
+    margin-left: 10px;
+}
+
+.select{
+    height: 30px;
+    width: 200px;
+    border-radius: 3px;
+    border: solid 0.5px;
+    margin-left: 10px;
+}
+
+.all{
+    color: blueviolet;
+}
+.complated{
+    color: brown;
+}
+.pending{
+    color: green;
+}
+.fatrash{
+    color: red;
+    margin-left: 10px;
+}
+
+.mark{
+    margin-left: 10px;
+    color: blue;
+}
