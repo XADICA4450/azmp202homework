@@ -1,0 +1,14 @@
+form{
+    padding-top: 200px;
+    padding-left: 38%;
+    font-size: 30px;
+}
+
+.add{
+    background-color: rgb(42, 179, 243);
+    color: black;
+    width: 90px;
+    height: 30px;
+    border: solid 1px ;
+    border-radius: 7px;
+}
